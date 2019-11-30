@@ -3,7 +3,7 @@
 Matriz::Matriz() {
     for (int i = 0; i < LARGO; i++) {
         for (int j = 0; j < LARGO; j++) {
-            // Inicializamos con valores que no sean cuadrados mágicos
+            // Inicializamos con valores matrices a multiplicar (2 matrices de 3x3)
             this->matriz[i][j] = (i * j);
 	    this->matriz0[i][j] = (i * j);
         }
@@ -53,8 +53,8 @@ Matriz::Matriz(const std::string& orig) {
 	
         }
 	if (!linea.empty()) {
-	    std::size_t pos = linea.find(':');      // posicion de ':' en str
-  	    std::string linea2 = linea.substr (pos);     // obtener desde ':' hasta el final de linea 
+	    std::size_t pos = linea.find(':');      // guardar posicion de ':' en str string (linea)
+  	    std::string linea2 = linea.substr (pos);     // obtener desde ':' hasta el final de linea (segunda matriz)
             // Quitamos caracters innecesarios
 	    linea2.erase(std::remove(linea2.begin(), linea2.end(), ':'), linea2.end());
             linea2.erase(std::remove(linea2.begin(), linea2.end(), '['), linea2.end());
