@@ -4,6 +4,6 @@
 
 2) en linux ejecutar terminal (Ctrl+Alt+T), ingresar a folder de programa, ejecutar codigo en terminal :
 
-  linux@linux:~$ .make
+  linux@linux:~$ make
   
   linux@linux:~$ ./dist/programa -f Matrices.txt -o salida.txt
